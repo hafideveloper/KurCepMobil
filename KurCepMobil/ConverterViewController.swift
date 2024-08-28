@@ -1,19 +1,16 @@
 //
-//  ViewController.swift
+//  ConverterViewController.swift
 //  KurCepMobil
 //
 //  Created by Apple on 28.08.2024.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class ConverterViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("ConverterViewController")
     }
-
-
 }
-
