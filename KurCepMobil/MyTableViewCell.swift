@@ -15,10 +15,10 @@ class MyTableViewCell:UITableViewCell {
     @IBOutlet weak var changeRateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    /*override func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
-        let margins = UIEdgeInsets(top: 15, left: 1, bottom: 10, right: 1)
+        let margins = UIEdgeInsets(top: 1, left: 1, bottom: 3, right: 1)
         contentView.frame = contentView.frame.inset(by: margins)
     }
-    */
+    
 }
