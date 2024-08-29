@@ -18,6 +18,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("HomeViewController")
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = 50
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currencyList.count
@@ -27,8 +29,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for:indexPath) as!
             MyTableViewCell
-            
-            cell.imageView?.image = currencyList[indexPath.row].currencyIcon
+        
+        cell.imageView?.image = nil
+        //cell.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        //cell.imageView?.frame.size = CGSize (width: 10, height: 10)
+        //cell.imageView?.clipsToBounds = true
+        cell.imageView?.image = currencyList[indexPath.row].currencyIcon
+        //cell.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        
             cell.fromLabel.text = currencyList[indexPath.row].currencyName
             cell.toLabel.text = "TRY"
             cell.changeRateLabel.text = String(currencyList[indexPath.row].changeRate)
@@ -40,6 +48,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.contentView.layer.borderColor = UIColor.lightGray.cgColor
             return cell
         }
-
+        
+    /*
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0
+    }
+     */
+    
+    
+    
+    
 }
 
