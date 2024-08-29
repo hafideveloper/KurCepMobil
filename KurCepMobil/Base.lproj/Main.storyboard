@@ -183,6 +183,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-2V-7T4">
                                 <rect key="frame" x="24" y="313" width="345" height="456"/>
                                 <color key="backgroundColor" red="0.019607843829999999" green="0.047058824450000002" blue="0.098039209840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="ITc-Ql-n4w" customClass="MyTableViewCell" customModule="KurCepMobil" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="345" height="43.666667938232422"/>
@@ -230,11 +235,13 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.096950036831724221" green="0.12775046296491205" blue="0.2537681502525253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="FxR-fB-B9s" firstAttribute="leading" secondItem="hYm-j5-Lry" secondAttribute="leading" id="T17-qh-00T"/>
                                                 <constraint firstItem="FxR-fB-B9s" firstAttribute="top" secondItem="hYm-j5-Lry" secondAttribute="top" constant="5" id="YoF-HC-0Fl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.096950036830000003" green="0.12775046300000001" blue="0.25376815029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="changeRateLabel" destination="y4Q-OC-c8F" id="se1-oF-y9h"/>
                                             <outlet property="currencyIcon" destination="FxR-fB-B9s" id="8jH-Ss-zxJ"/>
