@@ -52,6 +52,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         print("Data is in string: \(dataString)")
                     }
                 }
+                
+                
                 //print("data: \(data)")
                 
             }

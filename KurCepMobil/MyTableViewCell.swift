@@ -17,7 +17,7 @@ class MyTableViewCell:UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        let margins = UIEdgeInsets(top: 1, left: 1, bottom: 3, right: 1)
+        let margins = UIEdgeInsets(top: 2, left: 1, bottom: 3, right: 1)
         contentView.frame = contentView.frame.inset(by: margins)
     }
     

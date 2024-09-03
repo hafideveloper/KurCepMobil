@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F532940F2C86F14E003615C9 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532940E2C86F14E003615C9 /* CurrencyResponse.swift */; };
 		F5BB76A52C7F15790039781A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76A42C7F15790039781A /* AppDelegate.swift */; };
 		F5BB76A72C7F15790039781A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76A62C7F15790039781A /* SceneDelegate.swift */; };
 		F5BB76A92C7F15790039781A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76A82C7F15790039781A /* HomeViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F532940E2C86F14E003615C9 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		F5BB76A12C7F15790039781A /* KurCepMobil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KurCepMobil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BB76A42C7F15790039781A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BB76A62C7F15790039781A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				F5BB76A42C7F15790039781A /* AppDelegate.swift */,
 				F5BB76A62C7F15790039781A /* SceneDelegate.swift */,
 				F5BB76A82C7F15790039781A /* HomeViewController.swift */,
+				F532940E2C86F14E003615C9 /* CurrencyResponse.swift */,
 				F5BB76B82C7F1DED0039781A /* ConverterViewController.swift */,
 				F5BB76BE2C7F3F910039781A /* CurrencyModel.swift */,
 				F5BB76BA2C7F21640039781A /* MyTableViewCell.swift */,
@@ -153,6 +156,7 @@
 				F5BB76A72C7F15790039781A /* SceneDelegate.swift in Sources */,
 				F5BB76BB2C7F21640039781A /* MyTableViewCell.swift in Sources */,
 				F5BB76B92C7F1DED0039781A /* ConverterViewController.swift in Sources */,
+				F532940F2C86F14E003615C9 /* CurrencyResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
