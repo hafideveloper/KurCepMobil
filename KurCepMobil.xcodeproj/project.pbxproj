@@ -16,7 +16,6 @@
 		F5BB76B12C7F157A0039781A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BB76AF2C7F157A0039781A /* LaunchScreen.storyboard */; };
 		F5BB76B92C7F1DED0039781A /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76B82C7F1DED0039781A /* ConverterViewController.swift */; };
 		F5BB76BB2C7F21640039781A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76BA2C7F21640039781A /* MyTableViewCell.swift */; };
-		F5BB76BF2C7F3F910039781A /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB76BE2C7F3F910039781A /* CurrencyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		F5BB76B22C7F157A0039781A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BB76B82C7F1DED0039781A /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		F5BB76BA2C7F21640039781A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		F5BB76BE2C7F3F910039781A /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 				F5BB76A82C7F15790039781A /* HomeViewController.swift */,
 				F532940E2C86F14E003615C9 /* CurrencyResponse.swift */,
 				F5BB76B82C7F1DED0039781A /* ConverterViewController.swift */,
-				F5BB76BE2C7F3F910039781A /* CurrencyModel.swift */,
 				F5BB76BA2C7F21640039781A /* MyTableViewCell.swift */,
 				F5BB76AA2C7F15790039781A /* Main.storyboard */,
 				F5BB76AD2C7F157A0039781A /* Assets.xcassets */,
@@ -152,7 +149,6 @@
 			files = (
 				F5BB76A92C7F15790039781A /* HomeViewController.swift in Sources */,
 				F5BB76A52C7F15790039781A /* AppDelegate.swift in Sources */,
-				F5BB76BF2C7F3F910039781A /* CurrencyModel.swift in Sources */,
 				F5BB76A72C7F15790039781A /* SceneDelegate.swift in Sources */,
 				F5BB76BB2C7F21640039781A /* MyTableViewCell.swift in Sources */,
 				F5BB76B92C7F1DED0039781A /* ConverterViewController.swift in Sources */,

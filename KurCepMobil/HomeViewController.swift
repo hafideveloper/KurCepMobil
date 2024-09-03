@@ -53,7 +53,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     }
                     
                     do {
-                        var jsonDecoder = JSONDecoder()
+                        let jsonDecoder = JSONDecoder()
                         let response:Response = try jsonDecoder.decode(Response.self, from: data)
                         
                         print("IS RESPONSE SUCCESS?" + String(response.success))
