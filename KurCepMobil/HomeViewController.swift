@@ -12,6 +12,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     
+    let CORE_URL:String = "https://data.fixer.io/api"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +23,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.rowHeight = 50
         
         let parameters = ["access_key":"d4eff189c2b2ab7c468eb9c2ef16eec2"]
-        var urlComponents = URLComponents(string: "https://data.fixer.io/api/latest")!
+        var urlComponents = URLComponents(string: CORE_URL + "/latest")!
         
         urlComponents.queryItems = parameters.map{URLQueryItem(name:
             $0.key, value: $0.value)
@@ -87,8 +89,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for:indexPath) as!
             MyTableViewCell
-        
-        
+      
+            cell.iconLabel.text = currencyResponseList[indexPath.row].currencyName
             cell.fromLabel.text = currencyResponseList[indexPath.row].currencyName
             cell.toLabel.text = "EUR"
         
