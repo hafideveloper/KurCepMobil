@@ -51,12 +51,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     if let dataString = String(data: data, encoding: .utf8) {
                         print("Data is in string: \(dataString)")
                     }
+                    
+                    do {
+                        var jsonDecoder = JSONDecoder()
+                        let response:Response = try jsonDecoder.decode(Response.self, from: data)
+                        
+                        print("IS RESPONSE SUCCESS?" + String(response.success))
+                        
+                    } catch let errorInparsing {
+                        print("Error IN parsing." + errorInparsing.localizedDescription)
+                    }
+                
                 }
-                
-                
-                //print("data: \(data)")
-                
             }
+        
         task.resume()
         
     }

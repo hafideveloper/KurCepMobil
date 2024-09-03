@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Response {
+struct Response:Codable {
     var success:Bool
     var base:String
     var rates : [String:Double]
