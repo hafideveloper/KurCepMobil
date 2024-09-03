@@ -57,7 +57,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let response:Response = try jsonDecoder.decode(Response.self, from: data)
                         
                         print("IS RESPONSE SUCCESS?" + String(response.success))
+                        currencyResponseList.removeAll()
+                        for currenceTemp in response.rates {
+                            
+                            print("response: " + currenceTemp.key)
+                            var element:CurrencyResponse = CurrencyResponse(currencyName: currenceTemp.key, value: currenceTemp.value)
+                            currencyResponseList.append(element)
+                        }
                         
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
                     } catch let errorInparsing {
                         print("Error IN parsing." + errorInparsing.localizedDescription)
                     }
@@ -69,7 +79,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencyList.count
+        return currencyResponseList.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,17 +88,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for:indexPath) as!
             MyTableViewCell
         
-        cell.imageView?.image = nil
-        //cell.imageView?.translatesAutoresizingMaskIntoConstraints = false
-        //cell.imageView?.frame.size = CGSize (width: 10, height: 10)
-        //cell.imageView?.clipsToBounds = true
-        cell.imageView?.image = currencyList[indexPath.row].currencyIcon
-        //cell.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         
-            cell.fromLabel.text = currencyList[indexPath.row].currencyName
-            cell.toLabel.text = "TRY"
-            cell.changeRateLabel.text = String(currencyList[indexPath.row].changeRate)
-            cell.priceLabel.text = String(currencyList[indexPath.row].price)
+            cell.fromLabel.text = currencyResponseList[indexPath.row].currencyName
+            cell.toLabel.text = "EUR"
+        
+        
+        var formattedDouble = String(format: "%.2f", currencyResponseList[indexPath.row].value)
+        cell.priceLabel.text = String(formattedDouble)
+            //cell.priceLabel.text = String(currencyResponseList[indexPath.row].value)
         
         cell.contentView.layer.cornerRadius = 5
         cell.contentView.layer.masksToBounds = true
