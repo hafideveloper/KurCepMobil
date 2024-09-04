@@ -13,9 +13,7 @@ class MyTableViewCell:UITableViewCell {
     @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var changeRateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    
     @IBOutlet weak var currencyIcon: UIImageView!
-    
     @IBOutlet weak var iconLabel: UILabel!
     
     override func layoutSubviews() {
